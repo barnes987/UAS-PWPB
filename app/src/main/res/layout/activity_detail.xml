@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/student1" />
+
+   <GridLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:columnCount="1"
+       android:rowCount="15"
+       android:layout_below="@id/imgLogo"
+       android:padding="20dp">
+       <TextView
+           android:id="@+id/tvNo"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:drawableLeft="@drawable/ic_create_black_24dp"
+           android:text="Nomor"
+           android:textSize="16sp"/>
+
+       <TextView
+           android:id="@+id/txtNo"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="0"/>
+
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:background="@color/colorAccent"
+           android:layout_marginBottom="5dp"/>
+
+       <TextView
+           android:id="@+id/tvNama"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:drawableLeft="@drawable/ic_group_black_24dp"
+           android:text="Nama"
+           android:textSize="16sp"/>
+
+       <TextView
+           android:id="@+id/txtNama"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Aip Ariyadi"/>
+
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:background="@color/colorAccent"
+           android:layout_marginBottom="5dp"/>
+
+       <TextView
+           android:id="@+id/tvTglLahir"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:drawableLeft="@drawable/ic_date_range_black_24dp"
+           android:text="Tanggal Lahir"
+           android:textSize="16sp"/>
+
+       <TextView
+           android:id="@+id/txtTglLahir"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="2002-04-18"/>
+
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:background="@color/colorAccent"
+           android:layout_marginBottom="5dp"/>
+
+       <TextView
+           android:id="@+id/tvJenkel"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:drawableLeft="@drawable/ic_person_black_24dp"
+           android:text="Jenis Kelamin"
+           android:textSize="16sp"/>
+
+       <TextView
+           android:id="@+id/txtJenkel"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Laki - Laki"/>
+
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:background="@color/colorAccent"
+           android:layout_marginBottom="5dp"/>
+
+       <TextView
+           android:id="@+id/tvAlamat"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:drawableLeft="@drawable/ic_place_black_24dp"
+           android:text="Alamat"
+           android:textSize="16sp"/>
+
+       <TextView
+           android:id="@+id/txtAlamat"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Kopo Cirangrang"/>
+
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:background="@color/colorAccent"
+           android:layout_marginBottom="5dp"/>
+   </GridLayout>
+
+</RelativeLayout>
